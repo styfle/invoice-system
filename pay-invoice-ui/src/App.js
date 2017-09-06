@@ -3,7 +3,8 @@ import { Form, Header, Segment, Dropdown, TextArea, Button } from 'semantic-ui-r
 import './App.css';
 import Eth from 'ethjs'
 import { Connect } from 'uport-connect'
-import { invoiceABI } from './invoiceABI.js'
+import { invoiceContractAddress } from '../../invoice-contract/invoiceContractDetails'
+import { invoiceABI } from '../../invoice-contract/invoiceABI'
 
 const spaceAboveRows = '20px'
 

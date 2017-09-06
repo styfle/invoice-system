@@ -3,19 +3,10 @@ import { Form, Header, Segment, Dropdown, TextArea, Button } from 'semantic-ui-r
 import './App.css';
 import Eth from 'ethjs'
 import { Connect } from 'uport-connect'
-import { invoiceABI } from './invoiceABI.js'
+import { invoiceContractAddress } from '../../invoice-contract/invoiceContractDetails'
+import { invoiceABI } from '../../invoice-contract/invoiceABI'
 
 const spaceAboveRows = '20px'
-
-// var uportAddress = '0xa9a2849e7930faac3d81a7ded461df6527fdd604' // ETH.COINBASE == party B address
-// var partyAAddress = '0x639cfc513041e4f8fdcd41a38f7c38f85108aa70'
-
-// var ETHEREUM_CLIENT = new Eth(new Eth.HttpProvider('http://localhost:8545'))
-// var ETHEREUM_CLIENT = new Eth(new Eth.HttpProvider('https://ropsten.infura.io'))
-var invoiceContractAddress = '0xadbdae3d5186c4c2a5b1a408054179a694b6403d' // new partyA address Sun: 5:42pm
-
-
-// var invoiceContract = ETHEREUM_CLIENT.contract(invoiceABI.abi).at(invoiceContractAddress)
 
 const currencyOptions = [
   {
